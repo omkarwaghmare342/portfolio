@@ -59,6 +59,19 @@ export const experiences = [
     skills: ["PCB design", "MQTT(Mosquitto Broker)", "ModBus(RS485)", "PythonFlask", "canvas.js",],
     doc: "",
   },
+  {
+    id: 1,
+    role: "Associate Avionics Intern",
+    company: "Astrophel Aerospace Pvt.Ltd",
+    date: "Feb 25 to Present",
+    desc: `• I am currently working at Astrophel Aerospace Pvt. Ltd. 
+    as an Associate Avionics Intern, 
+    where I am involved in the development and testing of avionics systems. 
+    My work includes hands-on experience with embedded systems 
+    and electronics used in aerospace applications.`,
+    skills: ["STM32 Cube IDE", "Free RTOS", "Interrupt HAndling", "Xilinx Zynq",],
+    doc: "",
+  },
 ];
 
 export const education = [

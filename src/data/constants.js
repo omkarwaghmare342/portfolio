@@ -77,8 +77,8 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://prolearnindia.com/wp-content/uploads/2023/03/3-4.jpg",
-    school: "Savitribai Phule Pune University",
+    img: "https://i.postimg.cc/wTr7NY1F/images.jpg",
+    school: "Pune Institute Of Computer Technology",
     date: "Sept 2023 - Ongoing",
     grade: "First Class",
     desc: "I am pursuing a Bachelor of Engineering from Pune University with a specialization in Electronics and Telecommunication.",

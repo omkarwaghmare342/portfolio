@@ -118,6 +118,17 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
 `
 
 
@@ -126,16 +137,20 @@ const Contact = () => {
 
   //hooks
   const [open, setOpen] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_j396p0c', 'template_zqyfmy3', form.current, '-jFaWDcBVh1nmqweD')
+    setLoading(true);
+    emailjs.sendForm('service_0f5rfyk', 'template_mxxgw6q', form.current, '81UjZQXLFdqOYWBqt')
       .then((result) => {
         setOpen(true);
         form.current.reset();
+        setLoading(false);
       }, (error) => {
         console.log(error.text);
+        setLoading(false);
       });
   }
 
@@ -153,7 +168,7 @@ const Contact = () => {
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value={loading ? "Sending..." : "Send"} disabled={loading} />
         </ContactForm>
         <Snackbar
           open={open}

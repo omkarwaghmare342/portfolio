@@ -29,7 +29,7 @@ export const skills = [
     title: "Embedded Hardware",
     skills: [
       { name: "Microcontrollers & Development Boards", image: "https://e7.pngegg.com/pngimages/71/493/png-clipart-microcontroller-mediatek-integrated-circuits-chips-segregation-blue-computer-network-thumbnail.png" },
-      { name: "Excellent Soldring", image: "https://png.pngtree.com/png-clipart/20231116/original/pngtree-soldering-iron-industrial-photo-png-image_13576172.png" },
+      { name: "Soldring", image: "https://png.pngtree.com/png-clipart/20231116/original/pngtree-soldering-iron-industrial-photo-png-image_13576172.png" },
       { name: "Circuit Design & PCB development", image: "https://p1.hiclipart.com/preview/983/956/942/brain-electronic-circuit-electrical-network-printed-circuit-boards-circuit-design-circuit-diagram-maze-logo-png-clipart.jpg" },
       { name: "Sensors Integration", image: "https://cdn-icons-png.flaticon.com/256/1340/1340014.png" },
       { name: "Real-Time Data Processing & Display(eg.OLED, LCD, and TFT)", image: "https://cdn-icons-png.flaticon.com/512/6283/6283154.png" },
